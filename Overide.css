@@ -1,10 +1,20 @@
+header{
+    flex-direction: st;
+}
 
-
+ .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      padding: 10px 20px;
+      color: white;
+      z-index: 1000;
+    }
 
 
 @media (max-width: 768px) {
 
-   
+
     main {
         flex-direction: column;
     }
@@ -18,7 +28,7 @@
 
 @media (max-width: 600px) {
 
-    
+
     .desktop-menu {
         display: none;
     }
@@ -27,7 +37,7 @@
         display: block;
     }
 
-   
+
     body {
         background-color: #e0f7fa;
     }
