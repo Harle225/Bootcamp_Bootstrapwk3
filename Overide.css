@@ -1,0 +1,44 @@
+
+
+
+
+@media (max-width: 768px) {
+
+   
+    main {
+        flex-direction: column;
+    }
+
+    .content-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+   
+    body {
+        background-color: #e0f7fa;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}

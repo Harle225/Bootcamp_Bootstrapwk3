@@ -1,108 +1,257 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link rel="stylesheet" href="reset.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SheRides - All-Female Taxi Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="Overide.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #f0e6ff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: #3b0a59;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #3b0a59, #1a1a1a);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .btn-purple {
+      background-color: #a64ac9;
+      color: white;
+      border: none;
+    }
+
+    .btn-purple:hover {
+      background-color: #922bcd;
+    }
+
+    .services {
+      background-color: #1a1a1a;
+      padding: 60px 0;
+    }
+
+    .card {
+      background-color: #2c003e;
+      color: white;
+      border: none;
+    }
+
+    .cta-buttons .btn {
+      margin: 10px;
+    }
+
+    footer {
+      background-color: #3b0a59;
+      color: #ddd;
+      padding: 20px 0;
+    }
+  </style>
 </head>
-
 <body>
-  </head>
 
-<body>
-  <div class="container">
-    <header class="header">
-      <h1 class="display-1">Butler@Her</h1>
-      <div class="text-left">
-        <img src="female_driver.jpeg" class="rounded" alt="driver">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Butler@Her</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#book">Book a Ride</a></li>
+          <li class="nav-item"><a class="nav-link" href="#customer">Join as Customer</a></li>
+          <li class="nav-item"><a class="nav-link" href="#driver">Join as Driver</a></li>
+          <li class="nav-item"><a class="nav-link" href="#origins">Our Origins</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </header>
-        <main class="main-content">
-            <h2>Linking Female drivers with Female Passangers</h2>
-            <p>At Butler@Her we aim to bring together all female drivers and all female passangers.</p>
-            <ul></ul>
-            <main class="content">
-    <div class="box1">
-        <h2>Our Origins</h2>
-        <img src="Women Hands.png" alt="woman holding hands" width="500" height="150">
-        <a href="Our-origins.html" rel="About">
-            <button>Find out More</button>
-        </a>
     </div>
+  </nav>
 
-    <div class="box2">
-        <h2>Join as a Driver</h2>
-        <img src="female_driver.jpeg" alt="woman driver" width="600" height="150">
-        <a href="Join-as-a-driver.html" rel="About">
-            <button>Join</button>
-        </a>
-    </div>
 
-    <div class="box3">
-        <h2>Join as a Customer</h2>
-        <p>Just one click away!!!</p>
-        <img src="Taxi hat.jpeg" alt="woman driver hat" width="900" height="150">
-        <a href="Join-as-a-customer.html" rel="About">
-            <button>Join</button>
-        </a>
-    </div>
+    <div class="row mt-5 g-4 justify-content-center">
+<section class="hero py-5 text-center text-light" id="home" style="background-color: rebeccapurple;">
+  <div class="container">
+    <h1 class="display-4">Ride Safe. Ride Strong. Ride SheRides.</h1>
+    <p class="lead">Your trusted all-female taxi service — empowering women, one ride at a time.</p>
 
-    <div class="box4">
-        <h2>Book a Place/Time</h2>
-        <a href="Book-time-place.html" rel="About">
-            <button>Book a Taxi</button>
-        </a>
+    <div class="flex-container mt-5">
+      
+      <!-- Book Button -->
+      <div class="flex-item">
+        <a href="#book" class="btn btn-purple btn-lg">Book a Time & Place</a>
+      </div>
+
+      <!-- Join as Customer -->
+      <div class="flex-item">
+        <img src="Women Hands.png" class="img-fluid rounded mb-3" alt="Women Hands">
+        <a href="#customer" class="btn btn-outline-light w-100">Join as Customer</a>
+      </div>
+
+      <!-- Join as Driver -->
+      <div class="flex-item">
+        <img src="Taxi hat.jpeg" class="img-fluid rounded mb-3" alt="Taxi Hat">
+        <a href="#driver" class="btn btn-outline-light w-100">Join as Driver</a>
+      </div>
+
+      <!-- Our Origins -->
+      <div class="flex-item">
+        <img src="Purple_taxi.webp" class="img-fluid rounded mb-3" alt="Purple Taxi">
+        <a href="#origins" class="btn btn-outline-light w-100">Our Origins</a>
+      </div>
+
     </div>
-        </main>
-        <aside class="sidebar">
-            <h3>Sidebar</h3>
-            <p>This is a sidebar for additional content like links or ads.</p>
-        </aside>
-        <div class="text-center">
-    <img src="..." class="rounded" alt="...">
   </div>
+</section>
 
+<!-- Styles -->
+<style>
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
 
+  .flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    text-align: center;
+  }
 
+  .flex-item img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+  }
 
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+  .btn-purple {
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+  }
 
+  .btn-purple:hover {
+    background-color: #a64ca6;
+    color: white;
+  }
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
-
-</html>
-        <footer class="footer">
-            <p>&copy; Butler@Her 2024 </p>
-        </footer>
-    </div>
-</body>
-
-</html>
-
-
-
+  .btn-outline-light {
+    width: 100%;
+  }
+</style>
 
   
+  <section class="services text-center" id="services">
+    <div class="container">
+      <h2 class="mb-5">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h4>24/7 Safe Rides</h4>
+            <p>Day or night, count on SheRides for secure and friendly rides driven by professional women.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h4>Female-Only Rides</h4>
+            <p>Created for women by women — our rides are tailored for your comfort and peace of mind.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h4>Corporate & Events</h4>
+            <p>We provide reliable transport for events, conferences, and regular business commuting needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="text-center py-5" id="book" style="background-color:#2c003e;">
+    <div class="container">
+      <h2 class="mb-3">Book a Time and Place</h2>
+      <p class="mb-4">Schedule your next ride easily with us.</p>
+      <a href="Book-time-place.html" class="btn btn-purple btn-lg">Start Booking</a>
+    </div>
+  </section>
+
+  
+  <section class="text-center py-5" id="customer">
+    <div class="container">
+      <h2 class="mb-3">Join as a Customer</h2>
+      <p class="mb-4">Sign up and start riding securely with professional female drivers.</p>
+      <a href="Join-as-a-customer.html" class="btn btn-purple btn-lg" >Register Now</a>
+    </div>
+  </section>
+
+  
+  <section class="text-center py-5" id="driver" style="background-color:#1a1a1a;">
+    <div class="container">
+      <h2 class="mb-3">Join as a Driver</h2>
+      <p class="mb-4">Empower your community by driving with SheRides.</p>
+      <a href="Join-as-a-driver.html" class="btn btn-purple btn-lg">Become a Driver</a>
+    </div>
+  </section>
+
+  
+  <section class="text-center py-5" id="origins" style="background-color:#3b0a59;">
+    <div class="container">
+      <h2 class="mb-3">Our Origins</h2>
+      <p class="mb-4">Learn how SheRides began and our mission to support women everywhere.</p>
+      <a href="Our-origins.html" class="btn btn-outline-light btn-lg">Read Our Story</a>
+    </div>
+  </section>
+
+  
+  <section class="text-center py-5" id="contact" style="background-color:#3b0a59;">
+    <div class="container">
+      <h2 class="mb-3">Ready to Ride?</h2>
+      <p class="mb-4">Contact us to schedule your next safe and empowering trip with SheRides.</p>
+      <a href="Get-In-touch.html" class="btn-purple btn-lg">Get in Touch</a>
+    </div>
+  </section>
+
+  
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 SheRides. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $('a.nav-link, .cta-buttons a').click(function(e) {
+      const target = $(this).attr('href');
+      if (target.startsWith("#")) {
+        e.preventDefault();
+        $('html, body').animate({
+          scrollTop: $(target).offset().top - 60
+        }, 800);
+      }
+    });
+  </script>
+</body>
+</html>
+ 
